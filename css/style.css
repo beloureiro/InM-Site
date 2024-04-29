@@ -4,7 +4,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
 /* Background da página */
 .background {
     position: fixed;
@@ -64,5 +63,7 @@ header img {
 /* Estilo para a seção de serviço */
 .service-container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 20px; /* Adicionado espaçamento lateral para dispositivos móveis */
+    margin-left: auto;
+    margin-right: auto;
 }
