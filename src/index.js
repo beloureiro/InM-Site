@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { Mail, Phone, Linkedin, MessageCircle } from 'lucide-react';
-import { ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Animate } from 'recharts';
+import { ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from 'recharts';
 
 const DynamicExpertiseDashboard = () => {
   const [activeArea, setActiveArea] = useState('businessManagement');
@@ -58,9 +58,7 @@ const DynamicExpertiseDashboard = () => {
           <PolarGrid stroke="#e0e0e0" />
           <PolarAngleAxis dataKey="name" stroke="#ffffff" />
           <PolarRadiusAxis angle={30} domain={[0, 100]} stroke="#ffffff" />
-          <Radar name={expertiseAreas[activeArea].title} dataKey="value" stroke={expertiseAreas[activeArea].color} fill={expertiseAreas[activeArea].color} fillOpacity={0.6}>
-            <Animate attributeName="r" dur="1000" />
-          </Radar>
+          <Radar name={expertiseAreas[activeArea].title} dataKey="value" stroke={expertiseAreas[activeArea].color} fill={expertiseAreas[activeArea].color} fillOpacity={0.6} />
         </RadarChart>
       </ResponsiveContainer>
     );
@@ -93,30 +91,48 @@ const DynamicExpertiseDashboard = () => {
   );
 };
 
-const App = () => (
-  <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center p-4">
-    <div className="w-full max-w-4xl text-center">
-      <h1 className="text-4xl font-bold mb-8">Solution in Business Management</h1>
-      <DynamicExpertiseDashboard />
-      <div className="mt-12">
-        <h2 className="text-2xl font-semibold mb-4">Transform Your Business Today</h2>
-        <div className="flex justify-center space-x-6">
-          <a href="#" className="hover:text-green-400 transition-colors duration-300 transform hover:scale-110">
-            <Mail size={24} />
-          </a>
-          <a href="#" className="hover:text-green-400 transition-colors duration-300 transform hover:scale-110">
-            <Phone size={24} />
-          </a>
-          <a href="#" className="hover:text-green-400 transition-colors duration-300 transform hover:scale-110">
-            <Linkedin size={24} />
-          </a>
-          <a href="#" className="hover:text-green-400 transition-colors duration-300 transform hover:scale-110">
-            <MessageCircle size={24} />
-          </a>
+const BusinessManagementPage = () => {
+  return (
+    <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center p-4">
+      <div className="w-full max-w-4xl text-center">
+        <h1 className="text-4xl font-bold mb-8">Solution in Business Management</h1>
+        
+        <div className="mb-12 transform hover:scale-105 transition-transform duration-300">
+          <img src="/api/placeholder/200/80" alt="InMotion logo" className="mx-auto" />
+          <p className="mt-2 text-gray-400">Your Daily Toolbox for Business Excellence</p>
+        </div>
+        
+        <div className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">Our Expertise</h2>
+          <p className="leading-relaxed">
+            Explore our dynamic range of skills across key business domains. Our expertise is 
+            tailored to elevate your business performance through innovative solutions and 
+            strategic insights.
+          </p>
+        </div>
+        
+        <DynamicExpertiseDashboard />
+        
+        <div className="mt-12">
+          <h2 className="text-2xl font-semibold mb-4">Transform Your Business Today</h2>
+          <div className="flex justify-center space-x-6">
+            <a href="#" className="hover:text-green-400 transition-colors duration-300 transform hover:scale-110">
+              <Mail size={24} />
+            </a>
+            <a href="#" className="hover:text-green-400 transition-colors duration-300 transform hover:scale-110">
+              <Phone size={24} />
+            </a>
+            <a href="#" className="hover:text-green-400 transition-colors duration-300 transform hover:scale-110">
+              <Linkedin size={24} />
+            </a>
+            <a href="#" className="hover:text-green-400 transition-colors duration-300 transform hover:scale-110">
+              <MessageCircle size={24} />
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<BusinessManagementPage />, document.getElementById('root'));
