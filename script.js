@@ -99,7 +99,7 @@ const BusinessManagementPage = () => {
         <h1 className="text-4xl font-bold mb-8">Solution in Business Management</h1>
         
         <div className="mb-12 transform hover:scale-105 transition-transform duration-300">
-          <img src="assets/inmotion_logo.png" alt="InMotion logo" className="mx-auto" />
+          <img src="assets/rsz_1design_inmotion_181818.png" alt="InMotion logo" className="mx-auto" />
           <p className="mt-2 text-gray-400">Your Daily Toolbox for Business Excellence</p>
         </div>
         
