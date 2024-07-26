@@ -2,7 +2,7 @@
   "name": "meu-projeto",
   "version": "1.0.0",
   "description": "Meu projeto React no GitHub Pages",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
