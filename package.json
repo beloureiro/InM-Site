@@ -1,5 +1,5 @@
 {
-  "name": "InM-Site",
+  "name": "meu-projeto",
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
@@ -17,5 +17,5 @@
     "lucide-react": "^0.21.0",
     "recharts": "^2.1.6"
   },
-  "homepage": "http://beloureiro.github.io/InM-Site"
+  "homepage": "https://inmotion.today"
 }
