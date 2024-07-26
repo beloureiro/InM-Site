@@ -1,83 +1,16 @@
 body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
     margin: 0;
     padding: 0;
-    /* Use Montserrat font for text */
-    font-family: 'Montserrat', sans-serif;
-    /* Center content vertically */
+}
+
+#root {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
 }
 
-/* Fixed background with a gradient */
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #181818; /* Solid color as requested */
-    z-index: -1;
-}
-
-/* Center text in the header and add spacing */
-header {
-    text-align: center;
-    padding: 50px 0;
-    color: white;
-}
-
-/* Heading styles */
-h1, h2 {
-    text-align: center;
-    color: white;
-}
-
-/* Paragraph styles */
-p {
-    color: white;
-}
-
-/* Contact icon styles */
-.icon-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-/* Individual icon styles */
-.icon-container a {
-    margin: 0 20px;
-}
-
-/* Icon hover effect */
-.icon-container a i {
-    font-size: 24px;
-    color: white;
-    transition: transform 0.3s ease;
-}
-
-/* Enlarge icons on hover */
-.icon-container a i:hover {
-    transform: scale(1.2);
-}
-
-/* Logo styles */
-header img {
-    max-width: 200px;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Service section styling */
-.service-container {
-    max-width: 600px;
-    /* Use padding instead of margin to avoid text touching sides */
-    padding: 0 20px;
-    /* Auto margins for horizontal centering */
-    margin-left: auto;
-    margin-right: auto;
-}
+/* Adicione mais estilos conforme necessário */
